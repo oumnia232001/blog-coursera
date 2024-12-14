@@ -1,0 +1,50 @@
+# Voir https://help.github.com/articles/ignoring-files pour plus d'infos.
+
+# Fichiers temporaires générés par l'éditeur de texte ou le système.
+# Ces fichiers devraient être ignorés globalement :
+# `$XDG_CONFIG_HOME/git/ignore` ou `~/.config/git/ignore`
+
+# Ignore bundler config.
+.bundle
+
+# Ignore tous les fichiers d'environnement.
+.env*
+
+# Ignore les fichiers de log et temporaires.
+log/*
+tmp/*
+!log/.keep
+!tmp/.keep
+
+# Ignore pidfiles, mais garde le répertoire.
+tmp/pids/*
+!tmp/pids/
+!tmp/pids/.keep
+
+# Ignore les fichiers de stockage (ex : fichiers uploadés et bases SQLite locales).
+storage/*
+!storage/.keep
+tmp/storage/*
+!tmp/storage/
+!tmp/storage/.keep
+
+# Ignore les assets compilés.
+public/assets
+app/assets/builds/*
+!app/assets/builds/.keep
+
+# Ignore les clés de chiffrement.
+config/master.key
+
+# Ajout pour Node.js / Front-end
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Ignore les fichiers générés par des outils de build front-end.
+coverage/
+.DS_Store
+*.log
+*.tmp
